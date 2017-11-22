@@ -87,6 +87,9 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Syntax highlighting
+source ~/projects/~/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Aliases
 alias avd="/Users/$(whoami)/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
