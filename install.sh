@@ -1,25 +1,13 @@
 # Dependencies:
 # * hln (https://github.com/selkhateeb/hardlink)
+# * git
 # * oh-my-zsh
 # * iTerm2
 
-### Z shell config file ###
-rm ~/.zshrc
-hln ./.zshrc ~/.zshrc
+PURPLE='\033[0;35m'
+NC='\033[0m' # No color
 
 
-### Z shell theme ###
-rm ~/.oh-my-zsh/themes/jakst.zsh-theme
-hln ./jakst.zsh-theme ~/.oh-my-zsh/themes/jakst.zsh-theme
 
-
-### iTerm2 preferences ###
-
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/projects/~"
-
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-
-
-echo "\nConfig files copied!"
+echo "${PURPLE}\nInstallation complete!${NC}\n\n"
+./update.sh
