@@ -1,0 +1,10 @@
+{
+  // Place your settings in this file to overwrite the default settings
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "vsicons.presets.foldersAllDefaultIcon": true,
+  "window.zoomLevel": 0,
+  "explorer.confirmDragAndDrop": false,
+  "vsicons.projectDetection.autoReload": true
+}
