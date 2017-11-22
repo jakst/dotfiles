@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jacsta/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -88,8 +88,8 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Syntax highlighting
-source ~/projects/~/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/dotfiles/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Aliases
-alias avd="/Users/$(whoami)/Library/Android/sdk/tools/emulator -avd"
+alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"

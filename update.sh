@@ -20,7 +20,7 @@ hln ./jakst.zsh-theme ~/.oh-my-zsh/themes/jakst.zsh-theme
 echo "${PURPLE}Updating iTerm2 config...${NC}"
 
 # Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/projects/~"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles"
 
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
