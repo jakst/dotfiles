@@ -4,6 +4,7 @@ NC='\033[0m' # No color
 
 echo "${PURPLE}Updating configs...${NC}"
 
+
 ### Z shell config file ###
 echo "${PURPLE}Updating Z shell config...${NC}"
 rm ~/.zshrc
