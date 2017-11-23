@@ -93,3 +93,7 @@ source ~/dotfiles/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
+
+# Environment variables
+export ANDROID_HOME=~/Library/Android/sdk
+
