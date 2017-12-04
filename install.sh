@@ -17,6 +17,8 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension robertohuertasm.vscode-icons
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension waderyan.gitblame
+code --install-extension robinbentley.sass-indented
 
 ### zsh-syntax-highlighting
 echo "${PURPLE}Installing zsh-syntax-highlighting...${NC}"
