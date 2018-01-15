@@ -97,3 +97,10 @@ alias p="echo $PWD"
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
 
+# Functions
+function git() {
+  case $* in
+    please* ) shift 1; command git push --force-with-lease "$@" ;;
+    * ) command git "$@" ;;
+  esac
+}
