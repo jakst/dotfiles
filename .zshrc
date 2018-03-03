@@ -97,6 +97,9 @@ eval $(thefuck --alias)
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
 
+# Path variables
+export PATH=~/flutter/bin:$PATH
+
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
 
