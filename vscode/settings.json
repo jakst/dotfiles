@@ -6,5 +6,6 @@
   "vsicons.presets.foldersAllDefaultIcon": true,
   "window.zoomLevel": 0,
   "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "vsicons.projectDetection.autoReload": true
 }
