@@ -90,6 +90,9 @@ source $ZSH/oh-my-zsh.sh
 # Syntax highlighting
 source ~/dotfiles/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# The fuck
+eval $(thefuck --alias)
+
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"

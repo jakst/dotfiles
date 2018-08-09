@@ -25,6 +25,9 @@ echo "${PURPLE}Installing zsh-syntax-highlighting...${NC}"
 brew install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git dependencies/zsh-syntax-highlighting
 
+### thefuck
+echo "${PURPLE}Installing thefuck...${NC}"
+brew install thefuck
 
 echo "${PURPLE}\nInstallation complete!${NC}\n\n"
 ./update.sh
