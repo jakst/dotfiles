@@ -12,7 +12,6 @@ NC='\033[0m' # No color
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension eg2.tslint
 code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension robertohuertasm.vscode-icons
