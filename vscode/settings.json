@@ -11,5 +11,9 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "debug.toolBarLocation": "floating",
+  "vsicons.dontShowNewVersionMessage": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
   "vsicons.projectDetection.autoReload": true
 }
