@@ -18,6 +18,7 @@ code --install-extension robertohuertasm.vscode-icons
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension eamodio.gitlens
 code --install-extension robinbentley.sass-indented
+code --install-extension vsmobile.vscode-react-native
 
 ### zsh-syntax-highlighting
 echo "${PURPLE}Installing zsh-syntax-highlighting...${NC}"
