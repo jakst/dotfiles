@@ -10,5 +10,6 @@
   "window.zoomLevel": 0,
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "debug.toolBarLocation": "floating",
   "vsicons.projectDetection.autoReload": true
 }
