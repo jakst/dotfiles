@@ -13,6 +13,9 @@ NC='\033[0m' # No color
 # Install brew cask
 brew install cask
 
+# Install cocoapods
+brew install cocoapods
+
 # Install watch
 brew install watch
 
