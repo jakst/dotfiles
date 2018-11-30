@@ -1,12 +1,15 @@
 # Dependencies:
 # * vscode
-# * hln (https://github.com/selkhateeb/hardlink)
+# * homebrew
 # * git
 # * oh-my-zsh
 # * iTerm2
 
 PURPLE='\033[0;35m'
 NC='\033[0m' # No color
+
+# Install hardlink (https://github.com/selkhateeb/hardlink)
+brew install hardlink-osx
 
 ### VS Code extension
 code --install-extension PeterJausovec.vscode-docker
