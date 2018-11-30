@@ -9,6 +9,13 @@
 PURPLE='\033[0;35m'
 NC='\033[0m' # No color
 
+
+# Install brew cask
+brew install cask
+
+# Install watch
+brew install watch
+
 # Install hardlink (https://github.com/selkhateeb/hardlink)
 brew install hardlink-osx
 
