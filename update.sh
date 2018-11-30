@@ -5,7 +5,8 @@ NC='\033[0m' # No color
 echo "${PURPLE}Updating configs...${NC}"
 
 
-### VS Code config ### 
+# TODO: check if files exist
+### VS Code config ###
 echo "${PURPLE}Updating VS Code configs...${NC}" 
 rm ~/Library/Application\ Support/Code/User/keybindings.json 
 rm ~/Library/Application\ Support/Code/User/settings.json 

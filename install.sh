@@ -2,7 +2,8 @@
 # * vscode
 # * homebrew
 # * git
-# * oh-my-zsh
+# * zsh
+# * oh-my-zsh (https://github.com/robbyrussell/oh-my-zsh)
 # * iTerm2
 
 PURPLE='\033[0;35m'
