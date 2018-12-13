@@ -21,5 +21,6 @@
   "vsicons.projectDetection.autoReload": true,
   "editor.renderWhitespace": "none",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.smoothScrolling": true
+  "editor.smoothScrolling": true,
+  "git.autofetch": true
 }
