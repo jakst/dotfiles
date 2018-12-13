@@ -45,5 +45,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git dependencies/
 echo "${PURPLE}Installing thefuck...${NC}"
 brew install thefuck
 
+
+### setting
+echo "${PURPLE}Updating mac settings...${NC}"
+./mac-settings.sh
+
 echo "${PURPLE}\nInstallation complete!${NC}\n\n"
 ./update.sh
