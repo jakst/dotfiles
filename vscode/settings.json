@@ -18,5 +18,8 @@
   "editor.tabCompletion": "on",
   "editor.suggest.localityBonus": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vsicons.projectDetection.autoReload": true
+  "vsicons.projectDetection.autoReload": true,
+  "editor.renderWhitespace": "none",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true
 }
