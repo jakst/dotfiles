@@ -1,5 +1,5 @@
 echo "Setting clock format"
-defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM h:mm a"
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
 
 echo "Activating dark mode"
 osascript <<EOD
