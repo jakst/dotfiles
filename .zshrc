@@ -99,6 +99,7 @@ alias p="echo $PWD"
 
 # Path variables
 export PATH=~/flutter/bin:$PATH
+export PATH=$PATH:~/.deno/bin
 
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
