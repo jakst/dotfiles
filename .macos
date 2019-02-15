@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# ~/.macos — https://github.com/kentcdodds/dotfiles/blob/master/.macos
+# ~/.macos — https://github.com/jakst/dotfiles/blob/master/.macos
 # Modified by Jakob Ståhl
 # Run without downloading:
 # curl https://raw.githubusercontent.com/jakst/dotfiles/master/.macos | bash
@@ -30,8 +30,11 @@ echo "Installing stuff with Homebrew"
 # bat: A cat(1) clone with syntax highlighting and Git integration.
 # n: node version manager
 # fuck: bash corrections
+# watch: Executes a program periodically, showing output fullscreen
+# hardlink: Create hardlnks https://github.com/selkhateeb/hardlink
 brew install \
-  git bat n fuck
+  git bat n fuck cocoapods watch hardlink-osx zsh zsh-syntax-highlighting
+
 # yarn: without node because we'll get it from installing n later
 brew install \
   yarn --ignore-dependencies
@@ -103,6 +106,19 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# Set clock format
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
+
+# Activate dark mode
+echo "Activating dark mode"
+osascript <<EOD
+  tell application "System Events"
+    tell appearance preferences 
+      set dark mode to true
+    end tell
+  end tell
+EOD
 
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false

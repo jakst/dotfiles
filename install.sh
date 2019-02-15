@@ -9,18 +9,9 @@
 PURPLE='\033[0;35m'
 NC='\033[0m' # No color
 
-
-# Install brew cask
-brew install cask
-
-# Install cocoapods
-brew install cocoapods
-
-# Install watch
-brew install watch
-
-# Install hardlink (https://github.com/selkhateeb/hardlink)
-brew install hardlink-osx
+### setting
+echo "${PURPLE}Updating mac settings...${NC}"
+./.macos
 
 ### VS Code extension
 code --install-extension PeterJausovec.vscode-docker
@@ -38,17 +29,7 @@ code --install-extension ms-vscode.csharp
 
 ### zsh-syntax-highlighting
 echo "${PURPLE}Installing zsh-syntax-highlighting...${NC}"
-brew install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git dependencies/zsh-syntax-highlighting
-
-### thefuck
-echo "${PURPLE}Installing thefuck...${NC}"
-brew install thefuck
-
-
-### setting
-echo "${PURPLE}Updating mac settings...${NC}"
-./mac-settings.sh
 
 echo "${PURPLE}\nInstallation complete!${NC}\n\n"
 ./update.sh
