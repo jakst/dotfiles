@@ -27,9 +27,5 @@ code --install-extension vsmobile.vscode-react-native
 code --install-extension cssho.vscode-svgviewer
 code --install-extension ms-vscode.csharp
 
-### zsh-syntax-highlighting
-echo "${PURPLE}Installing zsh-syntax-highlighting...${NC}"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git dependencies/zsh-syntax-highlighting
-
 echo "${PURPLE}\nInstallation complete!${NC}\n\n"
 ./update.sh

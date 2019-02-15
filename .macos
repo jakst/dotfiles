@@ -33,11 +33,25 @@ echo "Installing stuff with Homebrew"
 # watch: Executes a program periodically, showing output fullscreen
 # hardlink: Create hardlnks https://github.com/selkhateeb/hardlink
 brew install \
-  git bat n fuck cocoapods watch hardlink-osx zsh zsh-syntax-highlighting
+  git bat n fuck cocoapods watch hardlink-osx zsh zsh-completions zsh-syntax-highlighting
 
 # yarn: without node because we'll get it from installing n later
 brew install \
   yarn --ignore-dependencies
+
+# Set zsh as default shell
+chsh -s /bin/zsh
+
+# Switch shell
+/bin/zsh
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+### Install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/dotfiles/dependencies/zsh-syntax-highlighting
+source ~/dotfiles/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 echo "Installing node"
