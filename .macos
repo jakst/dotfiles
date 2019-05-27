@@ -71,7 +71,8 @@ echo "installing apps with brew cask"
 brew cask install \
   alfred google-chrome firefox bettertouchtool visual-studio-code enpass \
   bartender itsycal virtualbox rocket sublime-text discord betterzip  \
-  qlcolorcode qlmarkdown qlstephen quicklook-json webpquicklook qlvideo
+  qlcolorcode qlmarkdown qlstephen quicklook-json webpquicklook qlvideo \
+  scroll-reverser
 
 
 echo "Generating an RSA token for GitHub"
