@@ -33,7 +33,7 @@ echo "Installing stuff with Homebrew"
 # watch: Executes a program periodically, showing output fullscreen
 # hardlink: Create hardlnks https://github.com/selkhateeb/hardlink
 brew install \
-  git bat n fuck cocoapods watch hardlink-osx zsh zsh-completions zsh-syntax-highlighting
+  git bat n thefuck cocoapods watch hardlink-osx zsh zsh-completions zsh-syntax-highlighting
 
 # yarn: without node because we'll get it from installing n later
 brew install \
