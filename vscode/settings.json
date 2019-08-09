@@ -27,6 +27,11 @@
 	"prettier.semi": false,
 	"prettier.trailingComma": "es5",
 	"prettier.useTabs": true,
+	"editor.autoClosingBrackets": "beforeWhitespace",
+	"editor.autoClosingQuotes": "beforeWhitespace",
+	"html.autoClosingTags": false,
+	"javascript.autoClosingTags": false,
+	"typescript.autoClosingTags": false,
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
