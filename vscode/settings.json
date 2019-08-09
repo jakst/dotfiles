@@ -32,6 +32,18 @@
 	"html.autoClosingTags": false,
 	"javascript.autoClosingTags": false,
 	"typescript.autoClosingTags": false,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		{
+			"language": "typescript",
+			"autoFix": true
+		},
+		{
+			"language": "typescriptreact",
+			"autoFix": true
+		}
+	],
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
