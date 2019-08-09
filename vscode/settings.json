@@ -22,5 +22,9 @@
 	"editor.renderWhitespace": "selection",
 	"editor.cursorSmoothCaretAnimation": true,
 	"editor.smoothScrolling": true,
-	"git.autofetch": true
+	"git.autofetch": true,
+	"prettier.singleQuote": true,
+	"prettier.semi": false,
+	"prettier.trailingComma": "es5",
+	"prettier.useTabs": true
 }
