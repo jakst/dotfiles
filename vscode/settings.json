@@ -44,6 +44,14 @@
 			"autoFix": true
 		}
 	],
+	"workbench.tree.indent": 20,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.suggestSelection": "first",
+	"rust.build_on_save": true,
+	"rust.clippy_preference": "on",
+	"csharp.referencesCodeLens.enabled": false,
+	"gitlens.advanced.telemetry.enabled": false,
+	"gitlens.codeLens.enabled": false,
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
