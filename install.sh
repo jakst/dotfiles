@@ -15,14 +15,12 @@ echo "${PURPLE}Updating mac settings...${NC}"
 
 ### VS Code extension
 code --install-extension PeterJausovec.vscode-docker
-code --install-extension eg2.tslint
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension jpoissonnier.vscode-styled-components
-code --install-extension robertohuertasm.vscode-icons
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension eamodio.gitlens
-code --install-extension robinbentley.sass-indented
 code --install-extension vsmobile.vscode-react-native
 code --install-extension cssho.vscode-svgviewer
 code --install-extension ms-vscode.csharp
