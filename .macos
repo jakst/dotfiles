@@ -70,7 +70,7 @@ echo "installing apps with brew cask"
 # bartender: keep you task bar organised
 brew cask install \
   alfred google-chrome firefox bettertouchtool visual-studio-code enpass \
-  bartender itsycal virtualbox rocket sublime-text discord betterzip  \
+  bartender rocket betterzip  \
   qlcolorcode qlmarkdown qlstephen quicklook-json webpquicklook qlvideo \
   scroll-reverser
 
