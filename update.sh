@@ -12,9 +12,7 @@ rm ~/Library/Application\ Support/Code/User/keybindings.json
 rm ~/Library/Application\ Support/Code/User/settings.json 
 rm ~/Library/Application\ Support/Code/User/vsicons.settings.json 
 hln ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json 
-hln ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json 
-hln ./vscode/vsicons.settings.json ~/Library/Application\ Support/Code/User/vsicons.settings.json 
-
+hln ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 ### Z shell config file ###
 echo "${PURPLE}Updating Z shell config...${NC}"
