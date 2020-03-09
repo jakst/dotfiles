@@ -69,5 +69,6 @@
 	},
 	"[markdown]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+	"search.useGlobalIgnoreFiles": true
 }
