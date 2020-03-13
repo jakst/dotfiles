@@ -33,7 +33,17 @@ echo "Installing stuff with Homebrew"
 # watch: Executes a program periodically, showing output fullscreen
 # hardlink: Create hardlnks https://github.com/selkhateeb/hardlink
 brew install \
-  git bat rg n thefuck cocoapods watch hardlink-osx zsh zsh-completions zsh-syntax-highlighting
+  git \
+  bat \
+  rg \
+  n \
+  thefuck \
+  cocoapods \
+  watch \
+  hardlink-osx \
+  zsh \
+  zsh-completions \
+  zsh-syntax-highlighting \
 
 # yarn: without node because we'll get it from installing n later
 brew install \
@@ -62,17 +72,32 @@ echo "yarn --version: $(yarn --version)"
 
 echo "Installing a few global npm packages"
 yarn global add \
-  serve gatsby-cli create-react-app create-react-native-app
+  serve \
+  gatsby-cli \
+  create-react-app \
+  create-react-native-app \
 
 
 echo "installing apps with brew cask"
 # itsycal: taskbar mini-calendar
 # bartender: keep you task bar organised
 brew cask install \
-  alfred google-chrome firefox bettertouchtool visual-studio-code enpass \
-  bartender rocket betterzip  \
-  qlcolorcode qlmarkdown qlstephen quicklook-json webpquicklook qlvideo \
-  scroll-reverser
+  alfred \
+  google-chrome \
+  firefox \
+  bettertouchtool \
+  visual-studio-code \
+  enpass \
+  bartender \
+  rocket \
+  betterzip \
+  qlcolorcode \
+  qlmarkdown \
+  qlstephen \
+  quicklook-json \
+  webpquicklook \
+  qlvideo \
+  scroll-reverser \
 
 
 echo "Generating an RSA token for GitHub"
