@@ -81,6 +81,11 @@ yarn global add \
 echo "installing apps with brew cask"
 # itsycal: taskbar mini-calendar
 # bartender: keep you task bar organised
+# Hummingbird: AMAZING window mover/resizer
+
+brew tap \
+  finestructure/Hummingbird \
+
 brew cask install \
   alfred \
   google-chrome \
@@ -98,6 +103,7 @@ brew cask install \
   webpquicklook \
   qlvideo \
   scroll-reverser \
+  Hummingbird \
 
 
 echo "Generating an RSA token for GitHub"
