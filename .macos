@@ -28,6 +28,7 @@ echo "Installing homebrew"
 echo "Installing stuff with Homebrew"
 # git
 # bat: A cat(1) clone with syntax highlighting and Git integration.
+# htop: Rich process and resources epxlorer in the terminal
 # n: node version manager
 # fuck: bash corrections
 # watch: Executes a program periodically, showing output fullscreen
@@ -36,6 +37,7 @@ brew install \
   git \
   bat \
   rg \
+  htop \
   n \
   thefuck \
   cocoapods \
