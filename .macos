@@ -116,6 +116,7 @@ brew cask install \
   scroll-reverser \
   Hummingbird \
   nightowl \
+  iterm2 \
 
 
 echo "Generating an RSA token for GitHub"
