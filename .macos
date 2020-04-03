@@ -9,6 +9,9 @@
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
+# Save our username for later reference
+export I_AM=$(whoami)
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -43,13 +46,18 @@ brew install \
   cocoapods \
   watch \
   hardlink-osx \
+  yarn \
   zsh \
   zsh-completions \
   zsh-syntax-highlighting \
 
-# yarn: without node because we'll get it from installing n later
-brew install \
-  yarn --ignore-dependencies
+# Install latest version of node
+sudo mkdir /usr/local/n
+sudo chown ${I_AM}:admin /usr/local/n
+n latest
+
+# Uninstall node from home-brew because we have it from n
+brew uninstall --ignore-dependencies node
 
 # Set zsh as default shell
 chsh -s /bin/zsh
