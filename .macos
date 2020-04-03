@@ -117,6 +117,7 @@ brew cask install \
   Hummingbird \
   nightowl \
   iterm2 \
+  gitkraken \
 
 
 echo "Generating an RSA token for GitHub"
