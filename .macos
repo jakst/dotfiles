@@ -59,20 +59,12 @@ n latest
 # Uninstall node from home-brew because we have it from n
 brew uninstall --ignore-dependencies node
 
-# Set zsh as default shell
-chsh -s /bin/zsh
-
-# Switch shell
-/bin/zsh
-
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 
 ### Install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/dotfiles/dependencies/zsh-syntax-highlighting
 source ~/dotfiles/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 echo "Installing node"
 n latest
