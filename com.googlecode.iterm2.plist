@@ -8,6 +8,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -461,6 +463,8 @@
 			<string></string>
 		</dict>
 	</dict>
+	<key>HapticFeedbackForEsc</key>
+	<false/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -473,10 +477,6 @@
 	<integer>256</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSNavLastRootDirectory</key>
-	<string>/Applications</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -485,11 +485,6 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
-	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
-		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
-	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -513,15 +508,8 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 163 224 275 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>188 238 570 452 0 0 1440 877 </string>
+	<string>207 138 570 452 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1254,20 +1242,16 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {1792, 1120}}</string>
 		<key>topLeft</key>
-		<string>{398, 730}</string>
+		<string>{574, 895}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
-	<string>A5F8733A-4EB2-4A15-BD10-B79C24399C9C</string>
+	<string>16C813BD-D92B-4F19-A7DA-A6CE40E3E3D1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
 	<integer>1</integer>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>604594259.15798795</real>
+	<real>607779648.99179995</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncRecordedVariables</key>
@@ -1977,7 +1961,7 @@
 		</array>
 	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
-	<real>604421459.157812</real>
+	<real>607606848.99163902</real>
 	<key>PasteTabToStringTabStopSize</key>
 	<integer>2</integer>
 	<key>PointerActions</key>
@@ -2020,7 +2004,7 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=9</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=49</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SoundForEsc</key>
