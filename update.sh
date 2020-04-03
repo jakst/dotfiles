@@ -3,23 +3,22 @@ NC='\033[0m' # No color
 
 echo "${PURPLE}Updating configs...${NC}"
 
-# TODO: check if files exist
 ### VS Code config ###
 echo "${PURPLE}Updating VS Code configs...${NC}" 
-rm ~/Library/Application\ Support/Code/User/keybindings.json 
-rm ~/Library/Application\ Support/Code/User/settings.json 
-rm ~/Library/Application\ Support/Code/User/vsicons.settings.json 
+rm -f ~/Library/Application\ Support/Code/User/keybindings.json 
+rm -f ~/Library/Application\ Support/Code/User/settings.json 
+rm -f ~/Library/Application\ Support/Code/User/vsicons.settings.json 
 hln ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json 
 hln ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 ### Z shell config file ###
 echo "${PURPLE}Updating Z shell config...${NC}"
-rm ~/.zshrc
+rm -f ~/.zshrc
 hln ./.zshrc ~/.zshrc
 
 ### Z shell theme ###
 echo "${PURPLE}Updating Z shell theme...${NC}"
-rm ~/.oh-my-zsh/themes/jakst.zsh-theme
+rm -f ~/.oh-my-zsh/themes/jakst.zsh-theme
 hln ./jakst.zsh-theme ~/.oh-my-zsh/themes/jakst.zsh-theme
 
 ### iTerm2 config ###
