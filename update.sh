@@ -1,9 +1,7 @@
 PURPLE='\033[0;35m'
 NC='\033[0m' # No color
 
-
 echo "${PURPLE}Updating configs...${NC}"
-
 
 # TODO: check if files exist
 ### VS Code config ###
@@ -19,12 +17,10 @@ echo "${PURPLE}Updating Z shell config...${NC}"
 rm ~/.zshrc
 hln ./.zshrc ~/.zshrc
 
-
 ### Z shell theme ###
 echo "${PURPLE}Updating Z shell theme...${NC}"
 rm ~/.oh-my-zsh/themes/jakst.zsh-theme
 hln ./jakst.zsh-theme ~/.oh-my-zsh/themes/jakst.zsh-theme
-
 
 ### iTerm2 config ###
 echo "${PURPLE}Updating iTerm2 config...${NC}"

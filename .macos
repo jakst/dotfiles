@@ -79,7 +79,6 @@ yarn global add \
   create-react-app \
   create-react-native-app \
 
-
 echo "installing apps with brew cask"
 # itsycal: taskbar mini-calendar
 # bartender: keep you task bar organised
