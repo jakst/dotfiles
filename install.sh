@@ -58,7 +58,6 @@ code --install-extension yzhang.markdown-all-in-one
 code --install-extension eamodio.gitlens
 code --install-extension vsmobile.vscode-react-native
 code --install-extension cssho.vscode-svgviewer
-code --install-extension ms-vscode.csharp
 
 echo "${PURPLE}Updating file links...${NC}"
 ./update.sh
