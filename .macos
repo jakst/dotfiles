@@ -31,10 +31,13 @@ echo "Installing homebrew"
 echo "Installing stuff with Homebrew"
 brew bundle
 
-# Install latest version of node
+echo "Installing node"
 sudo mkdir /usr/local/n
 sudo chown ${I_AM}:admin /usr/local/n
 n latest
+echo "node --version: $(node --version)"
+echo "npm --version: $(npm --version)"
+echo "yarn --version: $(yarn --version)"
 
 # Uninstall node from home-brew because we have it from n
 brew uninstall --ignore-dependencies node
@@ -45,12 +48,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ### Install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/dotfiles/dependencies/zsh-syntax-highlighting
 source ~/dotfiles/dependencies/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-echo "Installing node"
-n latest
-echo "node --version: $(node --version)"
-echo "npm --version: $(npm --version)"
-echo "yarn --version: $(yarn --version)"
 
 echo "Installing a few global npm packages"
 yarn global add \
