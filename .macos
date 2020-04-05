@@ -29,27 +29,7 @@ echo "Installing homebrew"
 
 
 echo "Installing stuff with Homebrew"
-# git
-# bat: A cat(1) clone with syntax highlighting and Git integration.
-# htop: Rich process and resources epxlorer in the terminal
-# n: node version manager
-# fuck: bash corrections
-# watch: Executes a program periodically, showing output fullscreen
-# hardlink: Create hardlnks https://github.com/selkhateeb/hardlink
-brew install \
-  git \
-  bat \
-  rg \
-  htop \
-  n \
-  thefuck \
-  cocoapods \
-  watch \
-  hardlink-osx \
-  yarn \
-  zsh \
-  zsh-completions \
-  zsh-syntax-highlighting \
+brew bundle
 
 # Install latest version of node
 sudo mkdir /usr/local/n
@@ -78,38 +58,6 @@ yarn global add \
   gatsby-cli \
   create-react-app \
   create-react-native-app \
-
-echo "installing apps with brew cask"
-# itsycal: taskbar mini-calendar
-# bartender: keep you task bar organised
-# Hummingbird: AMAZING window mover/resizer
-# nightowl: Better dark mode control
-
-brew tap \
-  finestructure/Hummingbird \
-
-brew cask install \
-  alfred \
-  google-chrome \
-  firefox \
-  bettertouchtool \
-  visual-studio-code \
-  enpass \
-  bartender \
-  rocket \
-  betterzip \
-  qlcolorcode \
-  qlmarkdown \
-  qlstephen \
-  quicklook-json \
-  webpquicklook \
-  qlvideo \
-  scroll-reverser \
-  Hummingbird \
-  nightowl \
-  iterm2 \
-  gitkraken \
-
 
 echo "Generating an RSA token for GitHub"
 mkdir -p ~/.ssh
