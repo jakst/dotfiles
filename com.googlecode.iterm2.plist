@@ -362,6 +362,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>CE969343-E239-4EBA-AD1F-4990EF7EA32F</string>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -494,6 +496,8 @@
 		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>1000</real>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -1412,7 +1416,11 @@
 	<key>NoSyncInstallationId</key>
 	<string>16C813BD-D92B-4F19-A7DA-A6CE40E3E3D1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>5</integer>
+	<integer>6</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>607878487.24642706</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2202,6 +2210,8 @@
 	<date>2020-04-05T11:23:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SeparateWindowTitlePerTab</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
