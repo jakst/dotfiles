@@ -49,6 +49,10 @@ echo "Installing a few global npm packages"
 yarn global add \
   serve \
   gatsby-cli \
+  prettier \
+  netlify-cli \
+  now \
+  create-next-app \
   create-react-app \
   create-react-native-app \
 
