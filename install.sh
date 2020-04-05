@@ -55,14 +55,12 @@ eval "$(ssh-agent -s)"
 echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
 
 # Install VS Code extension
-code --install-extension PeterJausovec.vscode-docker
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension eamodio.gitlens
-code --install-extension vsmobile.vscode-react-native
 code --install-extension cssho.vscode-svgviewer
 
 echo "${PURPLE}Updating file links...${NC}"
