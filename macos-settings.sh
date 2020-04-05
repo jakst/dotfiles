@@ -1,69 +1,22 @@
 #!/usr/bin/env bash
 
-# ~/.macos — https://github.com/jakst/dotfiles/blob/master/.macos
+# ~/macos-settings.sh — https://github.com/jakst/dotfiles/blob/master/macos-settings.sh
 # Modified by Jakob Ståhl
 # Run without downloading:
-# curl https://raw.githubusercontent.com/jakst/dotfiles/master/.macos | bash
+# curl https://raw.githubusercontent.com/jakst/dotfiles/master/macos-settings.sh | bash
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
-# Save our username for later reference
-export I_AM=$(whoami)
-
 # Ask for the administrator password upfront
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+# Keep-alive: update existing `sudo` time stamp until `macos-settings.sh` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-echo "Hello $I_AM! Let's get you set up."
+echo "Making system modifications:"
 
-echo "mkdir -p $HOME/code"
-mkdir -p "$HOME/code"
-
-echo "Installing homebrew"
-# install homebrew https://brew.sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-
-echo "Installing stuff with Homebrew"
-brew bundle
-
-echo "Installing node"
-sudo mkdir /usr/local/n
-sudo chown ${I_AM}:admin /usr/local/n
-n latest
-echo "node --version: $(node --version)"
-echo "npm --version: $(npm --version)"
-echo "yarn --version: $(yarn --version)"
-
-# Uninstall node from home-brew because we have it from n
-brew uninstall --ignore-dependencies node
-
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-echo "Installing a few global npm packages"
-yarn global add \
-  serve \
-  gatsby-cli \
-  prettier \
-  netlify-cli \
-  now \
-  create-next-app \
-  create-react-app \
-  create-react-native-app \
-
-echo "Generating an RSA token for GitHub"
-mkdir -p ~/.ssh
-ssh-keygen -t rsa -b 4096 -C "jakob.stahl91@gmail.com"
-echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
-eval "$(ssh-agent -s)"
-echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
-
-echo "making system modifications:"
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -293,6 +246,7 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+
 ###############################################################################
 # Photos                                                                      #
 ###############################################################################
@@ -321,15 +275,3 @@ for app in "Activity Monitor" \
   killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
-
-
-printf "TODO:\n\
-install: \n\
-  empty
-\n\
-Restart Terminal.app\n\
-copy git config from your backup/re-login \n\
-copy .npmrc from your backup/re-login \n\
-login to literally everything \n\
-"
