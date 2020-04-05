@@ -7,7 +7,6 @@ echo "${PURPLE}Updating configs...${NC}"
 echo "${PURPLE}Updating VS Code configs...${NC}" 
 rm -f ~/Library/Application\ Support/Code/User/keybindings.json 
 rm -f ~/Library/Application\ Support/Code/User/settings.json 
-rm -f ~/Library/Application\ Support/Code/User/vsicons.settings.json 
 hln ./vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json 
 hln ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
