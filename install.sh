@@ -45,7 +45,7 @@ yarn global add \
   create-react-native-app \
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 
 SSH_FOLDER="$HOME/.ssh"
 SSH_KEY="$HOME/id_rsa"
