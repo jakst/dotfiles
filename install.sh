@@ -11,8 +11,13 @@ CODE_FOLDER="$HOME/code"
 echo "Creating home folder at $CODE_FOLDER"
 mkdir -p $CODE_FOLDER
 
-echo "Installing homebrew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+if ! command -v brew > /dev/null; then
+  echo "Installing Homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+else
+    echo "Updating Homebrew"
+    brew update
+fi
 
 echo "Installing stuff with Homebrew"
 brew bundle
