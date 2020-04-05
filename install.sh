@@ -3,12 +3,13 @@ PURPLE='\033[0;35m'
 NC='\033[0m' # No color
 
 # Save our username for later reference
-export I_AM=$(whoami)
+I_AM=$(whoami)
 
 echo "Hello $I_AM! Let's get you set up."
 
-echo "Creating home folder at $HOME/code"
-mkdir -p "$HOME/code"
+CODE_FOLDER="$HOME/code"
+echo "Creating home folder at $CODE_FOLDER"
+mkdir -p $CODE_FOLDER
 
 echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
