@@ -47,12 +47,19 @@ yarn global add \
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-echo "Generating an RSA token for GitHub"
-mkdir -p ~/.ssh
-ssh-keygen -t rsa -b 4096 -C "jakob.stahl91@gmail.com"
-echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
-eval "$(ssh-agent -s)"
-echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
+SSH_FOLDER="$HOME/.ssh"
+SSH_KEY="$HOME/id_rsa"
+if [ ! -f "$SSH_KEY" ]; then
+  echo "Generating an RSA token for GitHub"
+  mkdir -p $SSH_FOLDER
+  
+  # Generate key without passphrase
+  ssh-keygen -t rsa -b 4096 -C "jakob.stahl91@gmail.com" -f "$SSH_KEY" -N ""
+
+  echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile $SSH_KEY" | tee "$SSH_FOLDER/config"
+  eval "$(ssh-agent -s)"
+  echo "run 'pbcopy < $SSH_KEY.pub' and paste that into GitHub"
+fi
 
 # Install VS Code extension
 code --install-extension dbaeumer.vscode-eslint
