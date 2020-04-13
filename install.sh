@@ -48,7 +48,7 @@ yarn global add \
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 
 SSH_FOLDER="$HOME/.ssh"
-SSH_KEY="$HOME/id_rsa"
+SSH_KEY="$SSH_FOLDER/id_rsa"
 if [ ! -f "$SSH_KEY" ]; then
   echo "Generating an RSA token for GitHub"
   mkdir -p $SSH_FOLDER
