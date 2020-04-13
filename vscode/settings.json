@@ -1,24 +1,20 @@
 {
 	// Place your settings in this file to overwrite the default settings
-	"workbench.iconTheme": "vscode-icons",
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": true
 	},
 	"editor.tabSize": 2,
-	"vsicons.presets.foldersAllDefaultIcon": true,
 	"window.zoomLevel": 0,
 	"explorer.confirmDragAndDrop": false,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
 	"debug.toolBarLocation": "floating",
-	"vsicons.dontShowNewVersionMessage": true,
 	"gitlens.advanced.messages": {
 		"suppressShowKeyBindingsNotice": true
 	},
 	"editor.tabCompletion": "on",
 	"editor.suggest.localityBonus": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"vsicons.projectDetection.autoReload": true,
 	"editor.renderWhitespace": "selection",
 	"editor.cursorSmoothCaretAnimation": true,
 	"editor.smoothScrolling": true,
