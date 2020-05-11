@@ -61,5 +61,8 @@
 	"[markdown]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"search.useGlobalIgnoreFiles": true
+	"search.useGlobalIgnoreFiles": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.formatOnType": true,
+	"editor.renameOnType": true,
 }
