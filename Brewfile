@@ -31,6 +31,9 @@ cask_args appdir: "/Applications"
   # A cat(1) clone with syntax highlighting and Git integration.
   brew "bat"
 
+  # Use instead of rm -rf to safely trash files
+  brew "trash"
+
 ##### Apps
   cask "alfred"
   cask "google-chrome"
@@ -57,3 +60,9 @@ cask_args appdir: "/Applications"
   cask "whatsapp"
   cask "slack"
   cask "spotify"
+  cask "1password"
+  cask "1password-cli"
+  cask "docker"
+  cask "deluge"
+  cask "macs-fan-control"
+  cask "android-messages"

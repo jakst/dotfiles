@@ -43,6 +43,9 @@ yarn global add \
   create-next-app \
   create-react-app \
   create-react-native-app \
+  ts-node \
+  ts-node-dev \
+  alfred-fkill \
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
