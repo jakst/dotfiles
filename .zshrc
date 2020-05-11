@@ -103,6 +103,7 @@ export PATH=$PATH:~/.deno/bin
 
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
+export HEROKU_ORGANIZATION=mentimeter
 
 # Functions
 function git() {
@@ -111,3 +112,6 @@ function git() {
     * ) command git "$@" ;;
   esac
 }
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(rbenv init -)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
