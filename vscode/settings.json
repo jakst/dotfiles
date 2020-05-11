@@ -28,17 +28,12 @@
 	"html.autoClosingTags": false,
 	"javascript.autoClosingTags": false,
 	"typescript.autoClosingTags": false,
+	"eslint.packageManager": "yarn",
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
-		{
-			"language": "typescript",
-			"autoFix": true
-		},
-		{
-			"language": "typescriptreact",
-			"autoFix": true
-		}
+		"typescript",
+		"typescriptreact",
 	],
 	"workbench.tree.indent": 20,
 	"javascript.updateImportsOnFileMove.enabled": "always",
