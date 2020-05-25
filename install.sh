@@ -39,7 +39,7 @@ yarn global add \
   gatsby-cli \
   prettier \
   netlify-cli \
-  now \
+  vercel \
   create-next-app \
   create-react-app \
   create-react-native-app \
