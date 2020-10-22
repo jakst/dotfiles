@@ -14,6 +14,7 @@ cask_args appdir: "/Applications"
   brew "zsh-completions"
   brew "zsh-syntax-highlighting"
   brew "watchman"
+  brew "deno"
 
   # Node version manager
   brew "n"
