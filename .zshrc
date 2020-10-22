@@ -134,3 +134,6 @@ reyarn() {
 reyarnd() {
   yarn remove $@ && yarn add --dev $@
 }
+
+# include Z, yo
+. ~/z/z.sh
