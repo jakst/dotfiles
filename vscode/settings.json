@@ -1,11 +1,9 @@
 {
-	// Place your settings in this file to overwrite the default settings
-	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": true
 	},
 	"editor.tabSize": 2,
-	"window.zoomLevel": 0,
+	"window.zoomLevel": 1,
 	"explorer.confirmDragAndDrop": false,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
 	"debug.toolBarLocation": "floating",
@@ -14,8 +12,7 @@
 	},
 	"editor.tabCompletion": "on",
 	"editor.suggest.localityBonus": true,
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"editor.renderWhitespace": "selection",
+	"editor.renderWhitespace": "all",
 	"editor.cursorSmoothCaretAnimation": true,
 	"editor.smoothScrolling": true,
 	"git.autofetch": true,
@@ -26,21 +23,17 @@
 	"editor.autoClosingBrackets": "beforeWhitespace",
 	"editor.autoClosingQuotes": "beforeWhitespace",
 	"html.autoClosingTags": false,
-	"javascript.autoClosingTags": false,
-	"typescript.autoClosingTags": false,
 	"eslint.packageManager": "yarn",
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
 		"typescript",
-		"typescriptreact",
+		"typescriptreact"
 	],
 	"workbench.tree.indent": 20,
-	"javascript.updateImportsOnFileMove.enabled": "always",
 	"editor.suggestSelection": "first",
 	"rust.build_on_save": true,
 	"rust.clippy_preference": "on",
-	"csharp.referencesCodeLens.enabled": false,
 	"gitlens.advanced.telemetry.enabled": false,
 	"gitlens.codeLens.enabled": false,
 	"[javascript]": {
@@ -63,6 +56,15 @@
 	},
 	"search.useGlobalIgnoreFiles": true,
 	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.formatOnType": true,
 	"editor.renameOnType": true,
+	"terminal.integrated.shell.osx": "/bin/zsh",
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"scm.alwaysShowRepositories": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"workbench.sideBar.location": "right",
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true
 }
