@@ -2,6 +2,7 @@ cask_args appdir: "/Applications"
 
 # Taps
   tap "finestructure/Hummingbird"
+  tap "facebook/fb"
 
 ##### Tools
 
@@ -12,6 +13,7 @@ cask_args appdir: "/Applications"
   brew "zsh"
   brew "zsh-completions"
   brew "zsh-syntax-highlighting"
+  brew "watchman"
 
   # Node version manager
   brew "n"
@@ -33,6 +35,10 @@ cask_args appdir: "/Applications"
 
   # Use instead of rm -rf to safely trash files
   brew "trash"
+
+  # Debug with flipper on real iOS device
+  brew "idb-companion"
+  # Also run "pip3.8 install fb-idb --user"
 
 ##### Apps
   cask "alfred"
@@ -66,6 +72,8 @@ cask_args appdir: "/Applications"
   cask "deluge"
   cask "macs-fan-control"
   cask "android-messages"
+  cask "java"
+  cask "android-studio"
 
 
 
