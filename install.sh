@@ -46,6 +46,23 @@ yarn global add \
   ts-node \
   ts-node-dev \
   alfred-fkill \
+  @prisma/cli \
+  blitz \
+  depcheck \
+  expo-cli \
+  flow-typed \
+  flowgen \
+  @khanacademy/flow-to-ts \
+  js-unused-exports \
+  get-changelogs \
+  lerna \
+  lerna-update-wizard \
+  lighthouse \
+  react-codemod \
+  typesync \
+  yarn-deduplicate \
+  where-broke \
+  njt \
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
