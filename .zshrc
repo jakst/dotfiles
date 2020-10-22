@@ -106,6 +106,7 @@ alias ly="linkyarn"
 # Path variables
 export PATH=~/flutter/bin:$PATH
 export PATH=$PATH:~/.deno/bin
+export PATH=$PATH:~/Library/Python/3.8/bin
 
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
