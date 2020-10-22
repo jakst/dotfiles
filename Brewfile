@@ -66,3 +66,13 @@ cask_args appdir: "/Applications"
   cask "deluge"
   cask "macs-fan-control"
   cask "android-messages"
+
+
+
+
+
+# More setup needed, but basically
+# brew "nodenv"
+# eval "$(nodenv init -)"
+# brew tap nodenv/nodenv
+# brew install nodenv-package-json-engine

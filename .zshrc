@@ -94,6 +94,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # The fuck
 eval $(thefuck --alias)
 
+# Nodenv
+eval "$(nodenv init -)"
+
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
@@ -113,6 +116,11 @@ function git() {
     * ) command git "$@" ;;
   esac
 }
+
+function n() {
+  nodenv install -s $1 && nodenv global $1 && node -v
+}
+
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
 eval "$(rbenv init -)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
