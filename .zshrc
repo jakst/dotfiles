@@ -100,6 +100,8 @@ eval "$(nodenv init -)"
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
+alias linkyarn="brew unlink yarn && brew link --overwrite yarn"
+alias ly="linkyarn"
 
 # Path variables
 export PATH=~/flutter/bin:$PATH
@@ -124,3 +126,11 @@ function n() {
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
 eval "$(rbenv init -)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+reyarn() {
+  yarn remove $@ && yarn add $@
+}
+
+reyarnd() {
+  yarn remove $@ && yarn add --dev $@
+}
