@@ -102,6 +102,8 @@ alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
 alias linkyarn="brew unlink yarn && brew link --overwrite yarn"
 alias ly="linkyarn"
+alias up="brew upgrade && brew upgrade --cask && softwareupdate --all --install --force && ly && yarn global upgrade-interactive --latest"
+alias sz="source ~/.zshrc"
 
 # Path variables
 export PATH=~/flutter/bin:$PATH
