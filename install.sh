@@ -35,34 +35,34 @@ brew uninstall --ignore-dependencies node
 
 echo "Installing a few global npm packages"
 yarn global add \
-  serve \
-  gatsby-cli \
-  prettier \
-  netlify-cli \
-  vercel \
+  @khanacademy/flow-to-ts \
+  @prisma/cli \
+  alfred-fkill \
+  blitz \
   create-next-app \
   create-react-app \
   create-react-native-app \
-  ts-node \
-  ts-node-dev \
-  alfred-fkill \
-  @prisma/cli \
-  blitz \
   depcheck \
   expo-cli \
   flow-typed \
   flowgen \
-  @khanacademy/flow-to-ts \
-  js-unused-exports \
+  gatsby-cli \
   get-changelogs \
+  js-unused-exports \
   lerna \
   lerna-update-wizard \
   lighthouse \
-  react-codemod \
-  typesync \
-  yarn-deduplicate \
-  where-broke \
+  netlify-cli \
   njt \
+  prettier \
+  react-codemod \
+  serve \
+  ts-node \
+  ts-node-dev \
+  typesync \
+  vercel \
+  where-broke \
+  yarn-deduplicate \
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
