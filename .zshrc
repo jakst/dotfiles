@@ -122,8 +122,7 @@ function git() {
   esac
 }
 
-# export PATH="/usr/local/opt/ruby/bin:$PATH"
-eval "$(rbenv init -)"
+# Fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 reyarn() {
