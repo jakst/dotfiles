@@ -81,15 +81,6 @@ if [ ! -f "$SSH_KEY" ]; then
   echo "run 'pbcopy < $SSH_KEY.pub' and paste that into GitHub"
 fi
 
-# Install VS Code extension
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension jpoissonnier.vscode-styled-components
-code --install-extension yzhang.markdown-all-in-one
-code --install-extension eamodio.gitlens
-code --install-extension cssho.vscode-svgviewer
-
 echo "${PURPLE}Updating file links...${NC}"
 ./update.sh
 
