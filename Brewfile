@@ -11,7 +11,6 @@ cask_args appdir: "/Applications"
   brew "hardlink-osx" # Create hardlnks https://github.com/selkhateeb/hardlink
   brew "htop" # Rich process and resources epxlorer in the terminal
   brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
-  brew "n" # Node version manager
   brew "rg"
   brew "thefuck" # Bash corrections
   brew "trash" # Use instead of rm -rf to safely trash files
@@ -56,13 +55,3 @@ cask_args appdir: "/Applications"
   cask "visual-studio-code"
   cask "webpquicklook"
   cask "whatsapp"
-
-
-
-
-
-# More setup needed, but basically
-# brew "nodenv"
-# eval "$(nodenv init -)"
-# brew tap nodenv/nodenv
-# brew install nodenv-package-json-engine

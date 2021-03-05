@@ -100,19 +100,19 @@ eval "$(nodenv init -)"
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
-alias linkyarn="brew unlink yarn && brew link --overwrite yarn"
-alias ly="linkyarn"
-alias up="brew upgrade && brew upgrade --cask && softwareupdate --all --install --force && ly && yarn global upgrade-interactive --latest"
+alias up="brew upgrade && brew upgrade --cask && softwareupdate --all --install --force && curl https://get.volta.sh | bash && yarn global upgrade-interactive --latest"
 alias sz="source ~/.zshrc"
+
+# Environment variables
+export ANDROID_HOME=~/Library/Android/sdk
+export VOLTA_HOME="$HOME/.volta"
+export HEROKU_ORGANIZATION=mentimeter
 
 # Path variables
 export PATH=~/flutter/bin:$PATH
 export PATH=$PATH:~/.deno/bin
 export PATH=$PATH:~/Library/Python/3.8/bin
-
-# Environment variables
-export ANDROID_HOME=~/Library/Android/sdk
-export HEROKU_ORGANIZATION=mentimeter
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Functions
 function git() {
@@ -120,10 +120,6 @@ function git() {
     please* ) shift 1; command git push --force-with-lease "$@" ;;
     * ) command git "$@" ;;
   esac
-}
-
-function n() {
-  nodenv install -s $1 && nodenv global $1 && node -v
 }
 
 # export PATH="/usr/local/opt/ruby/bin:$PATH"

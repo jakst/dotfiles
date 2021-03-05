@@ -23,9 +23,9 @@ echo "Installing stuff with Homebrew"
 brew bundle
 
 echo "Installing node"
-sudo mkdir -p /usr/local/n
-sudo chown ${I_AM}:admin /usr/local/n
-n latest
+curl https://get.volta.sh | bash
+volta setup
+volta install node
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
 echo "yarn --version: $(yarn --version)"
