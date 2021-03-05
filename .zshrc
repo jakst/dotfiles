@@ -122,7 +122,7 @@ function git() {
   esac
 }
 
-# Fuzzy finder
+# Fzf fuzzy finder completions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 reyarn() {

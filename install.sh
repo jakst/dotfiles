@@ -35,44 +35,44 @@ brew uninstall --ignore-dependencies node
 
 echo "Installing a few global npm packages"
 yarn global add \
-  @khanacademy/flow-to-ts \
-  @prisma/cli \
+  @sanity/cli \
   alfred-fkill \
-  blitz \
   create-next-app \
-  create-react-app \
   create-react-native-app \
   depcheck \
   expo-cli \
-  flow-typed \
-  flowgen \
-  gatsby-cli \
-  get-changelogs \
-  js-unused-exports \
   lerna \
   lerna-update-wizard \
   lighthouse \
-  netlify-cli \
+  ngrok \
   njt \
   prettier \
+  prisma \
+  prisma-dbml-generator \
   react-codemod \
+  react-native \
   serve \
+  serverless \
+  ts-migrate \
   ts-node \
   ts-node-dev \
+  ts-unused-exports \
   typesync \
   vercel \
-  where-broke \
   yarn-deduplicate \
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+
+# Install fzf fuzzy finder (ctrl+r). Linked to the brew package.
+$(brew --prefix)/opt/fzf/install
 
 SSH_FOLDER="$HOME/.ssh"
 SSH_KEY="$SSH_FOLDER/id_rsa"
 if [ ! -f "$SSH_KEY" ]; then
   echo "Generating an RSA token for GitHub"
   mkdir -p $SSH_FOLDER
-  
+
   # Generate key without passphrase
   ssh-keygen -t rsa -b 4096 -C "jakob.stahl91@gmail.com" -f "$SSH_KEY" -N ""
 

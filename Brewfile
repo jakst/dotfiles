@@ -7,8 +7,9 @@ cask_args appdir: "/Applications"
 ##### Tools
   brew "bat" # A cat(1) clone with syntax highlighting and Git integration.
   brew "cocoapods"
+  brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
   brew "git"
-  brew "hardlink-osx" # Create hardlnks https://github.com/selkhateeb/hardlink
+  brew "hardlink-osx" # Create hardlinks https://github.com/selkhateeb/hardlink
   brew "htop" # Rich process and resources epxlorer in the terminal
   brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
   brew "rg"
@@ -24,23 +25,28 @@ cask_args appdir: "/Applications"
 ##### Apps
   cask "1password"
   cask "1password-cli"
+  cask "adobe-acrobat-reader"
   cask "alfred"
+  cask "android-platform-tools"
   cask "android-messages"
   cask "android-studio"
-  cask "bartender"
   cask "bettertouchtool"
   cask "betterzip"
+  cask "discord"
   cask "deluge"
   cask "docker"
-  cask "enpass"
   cask "firefox"
+  cask "flipper"
   cask "gitkraken"
   cask "google-chrome"
   cask "Hummingbird"
+  cask "insomnia"
   cask "iterm2"
   cask "java"
   cask "macs-fan-control"
+  cask "microsoft-edge"
   cask "nightowl"
+  cask "postico"
   cask "qlcolorcode"
   cask "qlmarkdown"
   cask "qlstephen"
