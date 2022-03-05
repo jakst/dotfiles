@@ -7,13 +7,12 @@ cask_args appdir: "/Applications"
 ##### Tools
   brew "bat" # A cat(1) clone with syntax highlighting and Git integration.
   brew "cocoapods"
+  brew "dust" # A more intuitive "du" command for analyzing disk space, built in rust
   brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
   brew "git"
   brew "hardlink-osx" # Create hardlinks https://github.com/selkhateeb/hardlink
-  brew "htop" # Rich process and resources epxlorer in the terminal
-  brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
+  # brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
   brew "rg"
-  brew "thefuck" # Bash corrections
   brew "trash" # Use instead of rm -rf to safely trash files
   brew "watch" # Executes a program periodically, showing output fullscreen
   brew "watchman"
@@ -23,10 +22,10 @@ cask_args appdir: "/Applications"
   brew "zsh"
 
 ##### Apps
-  cask "1password"
+  # cask "1password"
   cask "1password-cli"
   cask "adobe-acrobat-reader"
-  cask "alfred"
+  # cask "alfred"
   cask "android-platform-tools"
   cask "android-messages"
   cask "android-studio"
@@ -38,7 +37,7 @@ cask_args appdir: "/Applications"
   cask "firefox"
   cask "flipper"
   cask "gitkraken"
-  cask "google-chrome"
+  # cask "google-chrome"
   cask "Hummingbird"
   cask "insomnia"
   cask "iterm2"
