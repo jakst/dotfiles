@@ -14,9 +14,11 @@ mkdir -p $CODE_FOLDER
 if ! command -v brew > /dev/null; then
   echo "Installing Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jakst/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 else
-    echo "Updating Homebrew"
-    brew update
+  echo "Updating Homebrew"
+  brew update
 fi
 
 echo "Installing stuff with Homebrew"
