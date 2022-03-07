@@ -10,7 +10,6 @@ cask_args appdir: "/Applications"
   brew "dust" # A more intuitive "du" command for analyzing disk space, built in rust
   brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
   brew "git"
-  brew "hardlink-osx" # Create hardlinks https://github.com/selkhateeb/hardlink
   # brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
   brew "rg"
   brew "trash" # Use instead of rm -rf to safely trash files
