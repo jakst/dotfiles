@@ -118,7 +118,7 @@ function git() {
 }
 
 eval "$(rbenv init -)"
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 reyarn() {
   yarn remove $@ && yarn add $@
