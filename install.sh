@@ -53,6 +53,7 @@ $HOME/.volta/bin/yarn global add \
   madge \
   ngrok \
   njt \
+  npkill \
   prettier \
   prisma \
   prisma-dbml-generator \
@@ -60,9 +61,11 @@ $HOME/.volta/bin/yarn global add \
   react-native \
   serve \
   serverless \
+  tsm \
   ts-migrate \
   ts-node \
   ts-node-dev \
+  ts-prune \
   ts-unused-exports \
   typesync \
   vercel \
