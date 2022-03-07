@@ -66,6 +66,7 @@ fpath+=~/.zfunc
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-z
   # zsh-autosuggestions
 )
 
@@ -136,9 +137,6 @@ reyarn() {
 reyarnd() {
   yarn remove $@ && yarn add --dev $@
 }
-
-# include Z, yo
-. ~/z/z.sh
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`

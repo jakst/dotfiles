@@ -80,6 +80,9 @@ sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVir
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 
+# Install z quick jump tool
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+
 # Install fzf fuzzy finder (ctrl+r). Linked to the brew package.
 $(brew --prefix)/opt/fzf/install
 
