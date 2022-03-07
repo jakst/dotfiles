@@ -31,6 +31,7 @@ if ! command -v volta > /dev/null; then
   $HOME/.volta/bin/volta setup
   $HOME/.volta/bin/volta install node
   $HOME/.volta/bin/volta install yarn
+  $HOME/.volta/bin/volta install pnpm
 else
   echo "Volta already installed"
 fi
