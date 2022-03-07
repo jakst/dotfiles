@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ~/macos-settings.sh — https://github.com/jakst/dotfiles/blob/master/macos-settings.sh
-# Modified by Jakob Ståhl
+# Modified by Jakob Norlin
 # Run without downloading:
 # curl https://raw.githubusercontent.com/jakst/dotfiles/master/macos-settings.sh | bash
 
@@ -17,6 +17,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 echo "Making system modifications:"
 
+###############################################################################
+# Rosetta                                                                     #
+###############################################################################
+softwareupdate --install-rosetta
 
 ###############################################################################
 # General UI/UX                                                               #
