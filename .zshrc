@@ -97,9 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # The fuck
 eval $(thefuck --alias)
 
@@ -158,3 +155,6 @@ reyarnd() {
 # zle -N down-line-or-beginning-search
 # bindkey "^[[A" up-line-or-beginning-search # Up
 # bindkey "^[[B" down-line-or-beginning-search # Down
+
+# Syntax highlighting (shold be the last thing to run)
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
