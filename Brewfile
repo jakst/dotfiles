@@ -11,6 +11,7 @@ cask_args appdir: "/Applications"
   brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
   brew "git"
   # brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
+  brew "java"
   brew "rbenv"
   brew "rg"
   brew "trash" # Use instead of rm -rf to safely trash files
@@ -40,7 +41,6 @@ cask_args appdir: "/Applications"
   cask "Hummingbird"
   cask "insomnia"
   cask "iterm2"
-  cask "java"
   cask "macs-fan-control"
   cask "microsoft-edge"
   cask "nightowl"
