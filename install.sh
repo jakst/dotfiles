@@ -74,7 +74,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 $(brew --prefix)/opt/fzf/install
 
 SSH_FOLDER="$HOME/.ssh"
-SSH_KEY="$SSH_FOLDER/id_rsa"
+SSH_KEY="$SSH_FOLDER/id_github"
 if [ ! -f "$SSH_KEY" ]; then
   echo "Generating an RSA token for GitHub"
   mkdir -p $SSH_FOLDER
