@@ -101,6 +101,7 @@ alias d="dum"
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
 export VOLTA_HOME="$HOME/.volta"
+export VOLTA_UNSAFE_GLOBAL=1 # Ensure volta doesn't sandbox global packages
 export HEROKU_ORGANIZATION=mentimeter
 
 # Path variables

@@ -40,6 +40,9 @@ echo "node --version: $($HOME/.volta/bin/node --version)"
 echo "npm --version: $($HOME/.volta/bin/npm --version)"
 echo "yarn --version: $($HOME/.volta/bin/yarn --version)"
 
+# Ensure volta doesn't sandbox global packages
+export VOLTA_UNSAFE_GLOBAL=1
+
 echo "Installing a few global npm packages"
 $HOME/.volta/bin/yarn global add \
   create-next-app \
