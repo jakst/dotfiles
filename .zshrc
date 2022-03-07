@@ -100,9 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # The fuck
 eval $(thefuck --alias)
 
-# Nodenv
-eval "$(nodenv init -)"
-
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"

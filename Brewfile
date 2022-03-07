@@ -15,7 +15,6 @@ cask_args appdir: "/Applications"
   brew "trash" # Use instead of rm -rf to safely trash files
   brew "watch" # Executes a program periodically, showing output fullscreen
   brew "watchman"
-  brew "yarn"
   brew "zsh-completions"
   brew "zsh-syntax-highlighting"
   brew "zsh"

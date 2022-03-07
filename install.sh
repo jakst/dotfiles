@@ -22,19 +22,23 @@ fi
 echo "Installing stuff with Homebrew"
 brew bundle
 
-echo "Installing node"
-curl https://get.volta.sh | bash
-volta setup
-volta install node
-echo "node --version: $(node --version)"
-echo "npm --version: $(npm --version)"
-echo "yarn --version: $(yarn --version)"
+if ! command -v volta > /dev/null; then
+  echo "Installing Volta & Node"
+  curl https://get.volta.sh | bash
 
-# Uninstall node from homebrew because we have it from n
-brew uninstall --ignore-dependencies node
+  $HOME/.volta/bin/volta setup
+  $HOME/.volta/bin/volta install node
+  $HOME/.volta/bin/volta install yarn
+else
+  echo "Volta already installed"
+fi
+  
+echo "node --version: $($HOME/.volta/bin/node --version)"
+echo "npm --version: $($HOME/.volta/bin/npm --version)"
+echo "yarn --version: $($HOME/.volta/bin/yarn --version)"
 
 echo "Installing a few global npm packages"
-yarn global add \
+$HOME/.volta/bin/yarn global add \
   @sanity/cli \
   alfred-fkill \
   create-next-app \
