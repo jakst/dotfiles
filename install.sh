@@ -41,15 +41,15 @@ echo "yarn --version: $($HOME/.volta/bin/yarn --version)"
 
 echo "Installing a few global npm packages"
 $HOME/.volta/bin/yarn global add \
-  @sanity/cli \
-  alfred-fkill \
   create-next-app \
   create-react-native-app \
+  create-tauri-app \
   depcheck \
   expo-cli \
   lerna \
   lerna-update-wizard \
   lighthouse \
+  madge \
   ngrok \
   njt \
   prettier \
