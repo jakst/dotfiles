@@ -110,6 +110,7 @@ export PATH=$PATH:~/.deno/bin
 export PATH=$PATH:~/Library/Python/3.8/bin
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH=~/workspace/dev-tools/bin:$PATH # menti cli
 
 # JAVA STUFF
 # Enable if needed.
