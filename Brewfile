@@ -2,6 +2,7 @@ cask_args appdir: "/Applications"
 
 # Taps
   tap "finestructure/Hummingbird"
+  tap "heroku/brew"
   tap "facebook/fb"
 
 ##### Tools
@@ -11,6 +12,7 @@ cask_args appdir: "/Applications"
   brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
   brew "git"
   # brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
+  brew "heroku"
   brew "java"
   brew "rbenv"
   brew "rg"
