@@ -6,13 +6,13 @@ local user="%{$fg[cyan]%}%n%{$reset_color%}"
 local host="%{$fg[cyan]%}@%m%{$reset_color%}"
 local pwd="%{$fg[yellow]%}%~%{$reset_color%}"
 
+local branch="%{$fg[white]%}$(git_prompt_info)%{$reset_color%}"
+
 PROMPT='
-${user} ${pwd}
+%{$fg[white]%}$(git_prompt_info)%{$reset_color%}${pwd}
 ${tic}  '
 
-RPROMPT='%{$fg[white]%}$(git_prompt_info)%{$reset_color%}'
-
 ZSH_THEME_GIT_PROMPT_PREFIX=""
-ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_SUFFIX=" "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%} ✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔%{$reset_color%}"

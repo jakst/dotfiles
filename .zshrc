@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -95,9 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
-alias up="brew upgrade && brew upgrade --cask && softwareupdate --all --install --force && curl https://get.volta.sh | bash && YARN_IGNORE_PATH=1 yarn global upgrade-interactive --latest"
+alias up="brew upgrade && brew upgrade --cask && curl https://get.volta.sh | bash && YARN_IGNORE_PATH=1 yarn global upgrade-interactive --latest"
 alias sz="source ~/.zshrc"
-alias d="dum"
+alias d="dum run"
 
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
@@ -111,6 +113,7 @@ export PATH=$PATH:~/Library/Python/3.8/bin
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=~/workspace/dev-tools/bin:$PATH # menti cli
+export PATH="/Users/jakst/.moon/tools/moon/latest:$PATH"
 
 # JAVA STUFF
 # Enable if needed.
@@ -155,7 +158,16 @@ reyarnd() {
 # Syntax highlighting (shold be the last thing to run)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
+# Rust
+source "$HOME/.cargo/env"
+
+# Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Bun completions
+[ -s "/Users/jakst/.bun/_bun" ] && source "/Users/jakst/.bun/_bun"
+[ -s "/Users/jakst/.oh-my-zsh/completions/_bun" ] && source "/Users/jakst/.oh-my-zsh/completions/_bun"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

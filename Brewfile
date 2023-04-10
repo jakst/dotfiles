@@ -7,13 +7,17 @@ cask_args appdir: "/Applications"
 
 ##### Tools
   brew "bat" # A cat(1) clone with syntax highlighting and Git integration.
+  brew "cloudflared"
   brew "cocoapods"
+  brew "dum" # A faster package.json scripts runner
   brew "dust" # A more intuitive "du" command for analyzing disk space, built in rust
   brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
+  brew "gh"
   brew "git"
   # brew "idb-companion" # Debug with flipper on real iOS device (Also run "pip3.8 install fb-idb --user")
   brew "heroku"
   brew "java"
+  brew "oha"
   brew "rbenv"
   brew "rg"
   brew "trash" # Use instead of rm -rf to safely trash files
@@ -36,7 +40,7 @@ cask_args appdir: "/Applications"
   cask "deluge"
   cask "docker"
   cask "firefox"
-  cask "flipper"
+  # cask "flipper"
   cask "gitkraken"
   # cask "google-chrome"
   cask "Hummingbird"

@@ -64,7 +64,7 @@ $HOME/.volta/bin/yarn global add \
   react-native \
   serve \
   serverless \
-  tsm \
+  tsx \
   ts-migrate \
   ts-node \
   ts-node-dev \
