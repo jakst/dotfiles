@@ -97,19 +97,14 @@ alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
 alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL"
 alias sz="source ~/.zshrc"
-alias d="dum run"
 
 # Environment variables
 export ANDROID_HOME=~/Library/Android/sdk
-export VOLTA_HOME="$HOME/.volta"
-export VOLTA_UNSAFE_GLOBAL=1 # Ensure volta doesn't sandbox global packages
-export HEROKU_ORGANIZATION=mentimeter
 
 # Path variables
 export PATH=$PATH:~/.deno/bin
 export PATH=$PATH:~/Library/Python/3.8/bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH=~/workspace/dev-tools/bin:$PATH # menti cli
 export PATH="/Users/jakst/.moon/tools/moon/latest:$PATH"
 
 # JAVA STUFF
