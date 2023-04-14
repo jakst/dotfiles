@@ -133,7 +133,6 @@ function gitzip() {
 	git archive -o $@.zip HEAD
 }
 
-eval "$(rbenv init -)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 reyarn() {

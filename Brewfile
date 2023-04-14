@@ -18,7 +18,6 @@ cask_args appdir: "/Applications"
   brew "heroku"
   brew "java"
   brew "oha"
-  brew "rbenv"
   brew "rg"
   brew "trash" # Use instead of rm -rf to safely trash files
   brew "watch" # Executes a program periodically, showing output fullscreen
