@@ -50,29 +50,22 @@ $HOME/.proto/bin/pnpm add --global \
   create-tauri-app \
   depcheck \
   expo-cli \
-  lerna \
-  lerna-update-wizard \
   lighthouse \
   madge \
   ngrok \
   njt \
   npkill \
   prettier \
-  prisma \
-  prisma-dbml-generator \
   react-codemod \
   react-native \
   serve \
   serverless \
   tsx \
   ts-migrate \
-  ts-node \
-  ts-node-dev \
   ts-prune \
   ts-unused-exports \
   typesync \
   vercel \
-  yarn-deduplicate \
 
 # Link java
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
