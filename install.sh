@@ -86,20 +86,6 @@ git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 # Install fzf fuzzy finder (ctrl+r). Linked to the brew package.
 $(brew --prefix)/opt/fzf/install
 
-SSH_FOLDER="$HOME/.ssh"
-SSH_KEY="$SSH_FOLDER/id_github"
-if [ ! -f "$SSH_KEY" ]; then
-  echo "Generating an RSA token for GitHub"
-  mkdir -p $SSH_FOLDER
-
-  # Generate key without passphrase
-  ssh-keygen -t rsa -b 4096 -C "jakob.stahl91@gmail.com" -f "$SSH_KEY" -N ""
-
-  echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile $SSH_KEY" | tee "$SSH_FOLDER/config"
-  eval "$(ssh-agent -s)"
-  echo "run 'pbcopy < $SSH_KEY.pub' and paste that into GitHub"
-fi
-
 echo "${PURPLE}Updating file links...${NC}"
 ./update.sh
 
