@@ -46,6 +46,9 @@ echo "npm --version: $($HOME/.proto/bin/npm --version)"
 echo "yarn --version: $($HOME/.proto/bin/yarn --version)"
 echo "pnpm --version: $($HOME/.proto/bin/pnpm --version)"
 
+pnpm setup
+source $HOME/.zshrc
+
 echo "Installing a few global npm packages"
 $HOME/.proto/bin/pnpm add --global \
   create-next-app \
