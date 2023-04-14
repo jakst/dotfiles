@@ -108,7 +108,6 @@ export HEROKU_ORGANIZATION=mentimeter
 # Path variables
 export PATH=$PATH:~/.deno/bin
 export PATH=$PATH:~/Library/Python/3.8/bin
-export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=~/workspace/dev-tools/bin:$PATH # menti cli
 export PATH="/Users/jakst/.moon/tools/moon/latest:$PATH"
@@ -134,14 +133,6 @@ function gitzip() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-reyarn() {
-  yarn remove $@ && yarn add $@
-}
-
-reyarnd() {
-  yarn remove $@ && yarn add --dev $@
-}
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
@@ -169,3 +160,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Bun completions
 [ -s "/Users/jakst/.bun/_bun" ] && source "/Users/jakst/.bun/_bun"
 [ -s "/Users/jakst/.oh-my-zsh/completions/_bun" ] && source "/Users/jakst/.oh-my-zsh/completions/_bun"
+
+# proto
+export PROTO_ROOT="$HOME/.proto"
+export PATH="$PROTO_ROOT/bin:$PATH"

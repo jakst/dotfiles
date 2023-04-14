@@ -24,27 +24,27 @@ fi
 echo "Installing stuff with Homebrew"
 brew bundle
 
-if ! command -v volta > /dev/null; then
-  echo "Installing Volta & Node"
-  curl https://get.volta.sh | bash
+if ! command -v proto > /dev/null; then
+  echo "Installing Proto & Node"
+  curl -fsSL https://moonrepo.dev/install/proto.sh | bash
 
-  $HOME/.volta/bin/volta setup
-  $HOME/.volta/bin/volta install node
-  $HOME/.volta/bin/volta install yarn
-  $HOME/.volta/bin/volta install pnpm
+  $HOME/.proto/bin/proto setup
+  $HOME/.proto/bin/proto install node
+  $HOME/.proto/bin/proto install bun
+  $HOME/.proto/bin/proto install deno
+  $HOME/.proto/bin/proto install yarn
+  $HOME/.proto/bin/proto install pnpm
 else
-  echo "Volta already installed"
+  echo "Proto already installed"
 fi
 
-echo "node --version: $($HOME/.volta/bin/node --version)"
-echo "npm --version: $($HOME/.volta/bin/npm --version)"
-echo "yarn --version: $($HOME/.volta/bin/yarn --version)"
-
-# Ensure volta doesn't sandbox global packages
-export VOLTA_UNSAFE_GLOBAL=1
+echo "node --version: $($HOME/.proto/bin/node --version)"
+echo "npm --version: $($HOME/.proto/bin/npm --version)"
+echo "yarn --version: $($HOME/.proto/bin/yarn --version)"
+echo "pnpm --version: $($HOME/.proto/bin/pnpm --version)"
 
 echo "Installing a few global npm packages"
-$HOME/.volta/bin/yarn global add \
+$HOME/.proto/bin/pnpm add --global \
   create-next-app \
   create-react-native-app \
   create-tauri-app \
