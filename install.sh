@@ -11,6 +11,9 @@ CODE_FOLDER="$HOME/code"
 echo "Creating home folder at $CODE_FOLDER"
 mkdir -p $CODE_FOLDER
 
+echo "${PURPLE}Updating file links...${NC}"
+./update.sh
+
 if ! command -v brew > /dev/null; then
   echo "Installing Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -78,9 +81,6 @@ git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 # Install fzf fuzzy finder (ctrl+r). Linked to the brew package.
 $(brew --prefix)/opt/fzf/install
-
-echo "${PURPLE}Updating file links...${NC}"
-./update.sh
 
 # Set macOS settings
 echo "${PURPLE}Updating mac settings...${NC}"
