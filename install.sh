@@ -29,6 +29,9 @@ fi
 echo "Installing stuff with Homebrew"
 brew bundle
 
+echo "Installing rustup"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 if ! command -v proto > /dev/null; then
   echo "Installing Proto & Node"
   curl -fsSL https://moonrepo.dev/install/proto.sh | bash
@@ -39,6 +42,7 @@ if ! command -v proto > /dev/null; then
   $HOME/.proto/bin/proto install deno
   $HOME/.proto/bin/proto install yarn
   $HOME/.proto/bin/proto install pnpm
+  $HOME/.proto/bin/proto install rust
 else
   echo "Proto already installed"
 fi
