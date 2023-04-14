@@ -95,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="echo $PWD"
-alias up="brew upgrade && brew upgrade --cask && curl https://get.volta.sh | bash && YARN_IGNORE_PATH=1 yarn global upgrade-interactive --latest"
+alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL"
 alias sz="source ~/.zshrc"
 alias d="dum run"
 
