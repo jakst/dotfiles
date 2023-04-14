@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -172,6 +170,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Bun completions
 [ -s "/Users/jakst/.bun/_bun" ] && source "/Users/jakst/.bun/_bun"
 [ -s "/Users/jakst/.oh-my-zsh/completions/_bun" ] && source "/Users/jakst/.oh-my-zsh/completions/_bun"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
