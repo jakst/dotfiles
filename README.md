@@ -4,5 +4,5 @@ Some fine dotfiles
 $ cd ~
 $ git clone git@github.com:Jakst/dotfiles.git
 $ cd dotfiles
-$ ./install.sh
+$ zsh ./install.sh
 ```

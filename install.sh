@@ -1,3 +1,5 @@
+## Make sure to execute with "zsh ./install.sh"
+
 # Set up terminal colors
 PURPLE='\033[0;35m'
 NC='\033[0m' # No color
