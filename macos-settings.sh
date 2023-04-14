@@ -65,16 +65,6 @@ defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -b
 # Set clock format
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
 
-# Activate dark mode
-echo "Activating dark mode"
-osascript <<EOD
-  tell application "System Events"
-    tell appearance preferences 
-      set dark mode to true
-    end tell
-  end tell
-EOD
-
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
@@ -209,7 +199,7 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.a
 
 
 ###############################################################################
-# Terminal & iTerm 2                                                          #
+# Terminal                                                                    #
 ###############################################################################
 
 # Only use UTF-8 in Terminal.app
