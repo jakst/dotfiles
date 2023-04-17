@@ -33,6 +33,7 @@ cask_args appdir: "/Applications"
   cask "android-studio"
   cask "bettertouchtool"
   cask "betterzip"
+  cask "cron" # Calendar
   cask "discord"
   cask "deluge"
   # cask "docker"
