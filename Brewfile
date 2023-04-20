@@ -6,6 +6,7 @@ cask_args appdir: "/Applications"
   tap "facebook/fb"
 
 ##### Tools
+  brew "awscli"
   brew "bat" # A cat(1) clone with syntax highlighting and Git integration.
   brew "cloudflared"
   # brew "cocoapods"
