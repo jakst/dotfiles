@@ -9,8 +9,7 @@ local pwd="%{$fg[yellow]%}%~%{$reset_color%}"
 local branch="%{$fg[white]%}$(git_prompt_info)%{$reset_color%}"
 
 PROMPT='
-%{$fg[white]%}$(git_prompt_info)%{$reset_color%}${pwd}
-${tic}  '
+%{$fg[white]%}$(git_prompt_info)%{$reset_color%}${pwd}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX=""
 ZSH_THEME_GIT_PROMPT_SUFFIX=" "
