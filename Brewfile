@@ -9,6 +9,7 @@ cask_args appdir: "/Applications"
   brew "awscli"
   brew "bat" # A cat(1) clone with syntax highlighting and Git integration.
   brew "cloudflared"
+  brew "coreutils" # Used to get timed commands in Warp
   # brew "cocoapods"
   brew "dust" # A more intuitive "du" command for analyzing disk space, built in rust
   brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
