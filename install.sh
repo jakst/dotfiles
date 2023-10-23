@@ -13,6 +13,13 @@ CODE_FOLDER="$HOME/code"
 echo "Creating home folder at $CODE_FOLDER"
 mkdir -p $CODE_FOLDER
 
+# Install oh-my-zsh
+echo "${PURPLE}Installing oh-my-zsh...${NC}"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+
+# Install z quick jump tool
+git clone https://github.com/agkozak/zsh-z $ZSH/plugins/zsh-z
+
 echo "${PURPLE}Updating file links...${NC}"
 ./update.sh
 
@@ -29,6 +36,8 @@ fi
 echo "Installing stuff with Homebrew"
 brew bundle
 
+source $HOME/.zshrc
+
 echo "Installing rustup"
 rustup --version 2> /dev/null ||
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -39,6 +48,7 @@ if ! command -v proto > /dev/null; then
 
   $HOME/.proto/bin/proto setup
   $HOME/.proto/bin/proto install node
+  $HOME/.proto/bin/proto install npm
   $HOME/.proto/bin/proto install bun
   $HOME/.proto/bin/proto install deno
   $HOME/.proto/bin/proto install yarn
@@ -54,7 +64,6 @@ echo "yarn --version: $($HOME/.proto/bin/yarn --version)"
 echo "pnpm --version: $($HOME/.proto/bin/pnpm --version)"
 
 pnpm setup
-source $HOME/.zshrc
 
 echo "Installing a few global npm packages"
 $HOME/.proto/bin/pnpm add --global \
@@ -82,12 +91,6 @@ $HOME/.proto/bin/pnpm add --global \
 
 # Link java
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
-
-# Install z quick jump tool
-git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 # Install fzf fuzzy finder (ctrl+r). Linked to the brew package.
 $(brew --prefix)/opt/fzf/install
