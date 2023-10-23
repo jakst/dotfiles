@@ -2,8 +2,6 @@ cask_args appdir: "/Applications"
 
 # Taps
   tap "finestructure/Hummingbird"
-  tap "heroku/brew"
-  tap "facebook/fb"
 
 ##### Tools
   brew "awscli"
