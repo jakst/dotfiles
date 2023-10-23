@@ -27,6 +27,7 @@ cask_args appdir: "/Applications"
 ##### Apps
   # cask "1password"
   cask "1password-cli"
+  cask "Arc"
   cask "adobe-acrobat-reader"
   cask "android-platform-tools"
   cask "android-messages"
