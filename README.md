@@ -2,7 +2,8 @@ Some fine dotfiles
 
 ```bash
 $ cd ~
-$ git clone git@github.com:Jakst/dotfiles.git
+$ mkdir code && cd code
+$ git clone https://github.com/jakst/dotfiles.git
 $ cd dotfiles
-$ zsh ./install.sh
+$ zsh ./install.sh # Using zsh is important!
 ```
