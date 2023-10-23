@@ -30,7 +30,8 @@ echo "Installing stuff with Homebrew"
 brew bundle
 
 echo "Installing rustup"
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup --version 2> /dev/null ||
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 if ! command -v proto > /dev/null; then
   echo "Installing Proto & Node"
