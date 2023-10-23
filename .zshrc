@@ -157,8 +157,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/Users/jakst/.oh-my-zsh/completions/_bun" ] && source "/Users/jakst/.oh-my-zsh/completions/_bun"
 
 # proto
-export PROTO_ROOT="$HOME/.proto"
-export PATH="$PROTO_ROOT/bin:$PATH"
+export PROTO_HOME="$HOME/.proto"
+export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/Users/jakst/Library/pnpm"
