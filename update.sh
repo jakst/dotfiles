@@ -10,5 +10,5 @@ ln ./.zshrc ~/.zshrc
 
 ### Z shell theme ###
 echo "${PURPLE}Updating Z shell theme...${NC}"
-rm -f ~/.oh-my-zsh/themes/jakst.zsh-theme
-ln ./jakst.zsh-theme ~/.oh-my-zsh/themes/jakst.zsh-theme
+mkdir -p ~/.oh-my-zsh/themes
+ln -f ./jakst.zsh-theme ~/.oh-my-zsh/themes/jakst.zsh-theme
