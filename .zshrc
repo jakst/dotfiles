@@ -95,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="pnpm"
+alias b="bun"
 alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL"
 alias sz="source ~/.zshrc"
 
