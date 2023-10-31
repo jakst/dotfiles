@@ -145,7 +145,11 @@ function gitzip() {
 # bindkey "^[[B" down-line-or-beginning-search # Down
 
 # Syntax highlighting (shold be the last thing to run)
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [[ $(uname -m) == 'arm64' ]]; then
+  source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # Rust
 source "$HOME/.cargo/env"
