@@ -102,6 +102,7 @@ alias sz="source ~/.zshrc"
 # Environment variables
 export LANG=en_US.UTF-8
 export ANDROID_HOME=~/Library/Android/sdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 
 # Path variables
 export PATH=$PATH:~/.deno/bin
@@ -111,11 +112,12 @@ export PATH="/Users/jakst/.moon/tools/moon/latest:$PATH"
 
 # JAVA STUFF
 # Enable if needed.
+if [[ $(uname -m) == 'arm64' ]]; then
   # If you need to have openjdk first in your PATH, run:
-  #   echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+    echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
   # For compilers to find openjdk you may need to set:
-  #   export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-
+    export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+fi
 
 # Functions
 function git() {
