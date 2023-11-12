@@ -77,6 +77,7 @@ $HOME/.proto/bin/pnpm add --global \
   ngrok \
   njt \
   npkill \
+  npm-check-updates \
   prettier \
   react-codemod \
   react-native \
