@@ -1,8 +1,5 @@
 cask_args appdir: "/Applications"
 
-# Taps
-  tap "finestructure/Hummingbird"
-
 ##### Tools
   brew "awscli"
   brew "bat" # A cat(1) clone with syntax highlighting and Git integration.
@@ -43,7 +40,6 @@ cask_args appdir: "/Applications"
   cask "gitkraken"
   cask "google-chrome"
   cask "hiddenbar"
-  cask "finestructure/hummingbird/hummingbird"
   cask "insomnia"
   cask "linear-linear"
   cask "microsoft-edge"
