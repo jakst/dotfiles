@@ -97,9 +97,6 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
-
 
 ###############################################################################
 # Screen                                                                      #
