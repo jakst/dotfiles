@@ -18,7 +18,7 @@ echo "${PURPLE}Installing oh-my-zsh...${NC}"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 
 # Install z quick jump tool
-git clone https://github.com/agkozak/zsh-z $ZSH/plugins/zsh-z
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 
 echo "${PURPLE}Updating file links...${NC}"
 ./update.sh
