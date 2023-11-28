@@ -110,15 +110,6 @@ export PATH=$PATH:~/Library/Python/3.8/bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/Users/jakst/.moon/tools/moon/latest:$PATH"
 
-# JAVA STUFF
-# Enable if needed.
-if [[ $(uname -m) == 'arm64' ]]; then
-  # If you need to have openjdk first in your PATH, run:
-    echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
-  # For compilers to find openjdk you may need to set:
-    export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-fi
-
 # Functions
 function git() {
   case $* in
