@@ -44,6 +44,7 @@ cask_args appdir: "/Applications"
   cask "linear-linear"
   cask "microsoft-edge"
   cask "messenger"
+  cask "MonitorControl" # Control external monitor brightness
   # cask "nightowl"
   # cask "postico"
   cask "qlmarkdown"
