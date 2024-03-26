@@ -16,6 +16,7 @@ cask_args appdir: "/Applications"
   brew "oha"
   brew "rg"
   brew "trash" # Use instead of rm -rf to safely trash files
+  brew "typos-cli" # Run `typos` cmd to find all typos in code
   brew "watch" # Executes a program periodically, showing output fullscreen
   brew "zsh-completions"
   brew "zsh-syntax-highlighting"
