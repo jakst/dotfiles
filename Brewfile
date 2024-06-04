@@ -15,6 +15,7 @@ cask_args appdir: "/Applications"
   brew "java"
   brew "oha"
   brew "rg"
+  brew "sd" # Better search/replade than sed https://github.com/chmln/sd
   brew "trash" # Use instead of rm -rf to safely trash files
   brew "typos-cli" # Run `typos` cmd to find all typos in code
   brew "watch" # Executes a program periodically, showing output fullscreen
