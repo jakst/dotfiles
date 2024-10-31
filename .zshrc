@@ -139,7 +139,7 @@ function gitzip() {
 # bindkey "^[[A" up-line-or-beginning-search # Up
 # bindkey "^[[B" down-line-or-beginning-search # Down
 
-# Syntax highlighting (shold be the last thing to run)
+# Syntax highlighting (should be the last thing to run)
 if [[ $(uname -m) == 'arm64' ]]; then
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 else
