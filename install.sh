@@ -71,7 +71,6 @@ $HOME/.proto/bin/pnpm add --global \
   create-react-native-app \
   create-tauri-app \
   depcheck \
-  expo-cli \
   lighthouse \
   madge \
   ngrok \
