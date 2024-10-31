@@ -109,8 +109,8 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 # Path variables
 export PATH=$PATH:~/.deno/bin
 export PATH=$PATH:~/Library/Python/3.8/bin
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="/Users/jakst/.moon/tools/moon/latest:$PATH"
+export PATH=~/.console-ninja/.bin:$PATH
+
 
 # Functions
 function git() {
