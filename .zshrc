@@ -97,7 +97,7 @@ alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="pnpm"
 alias b="bun"
 alias t="turbo"
-alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL"
+alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL && proto outdated --update --config-mode=global && proto use --config-mode=global"
 alias sz="source ~/.zshrc"
 alias compose="docker-compose"
 
