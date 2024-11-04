@@ -6,6 +6,11 @@ cask_args appdir: "/Applications"
   brew "cloudflared"
   brew "coreutils" # Used to get timed commands in Warp
   # brew "cocoapods"
+
+  # Deluge community build. Launched via cmd line `deluge`
+  tap "amar1729/deluge-meta"
+  cask "deluge-meta"
+
   brew "dust" # A more intuitive "du" command for analyzing disk space, built in rust
   brew "fzf" # Fuzzy finder (ctrl+r). Also requires running script manually
   brew "gh"
@@ -34,7 +39,6 @@ cask_args appdir: "/Applications"
   cask "betterzip"
   cask "cron" # Calendar
   cask "discord"
-  cask "deluge"
   # cask "docker"
   cask "figma"
   cask "firefox"

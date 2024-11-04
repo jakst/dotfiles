@@ -100,6 +100,7 @@ alias t="turbo"
 alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL && proto outdated --update --config-mode=global && proto use --config-mode=global"
 alias sz="source ~/.zshrc"
 alias compose="docker-compose"
+alias deluge="deluge-gtk"
 
 # Environment variables
 export LANG=en_US.UTF-8
