@@ -180,7 +180,7 @@ precmd() {
     now=$(gdate +%s.%N)
     elapsed=$(echo "$now - $timer" | bc)
     timer_show=$(printf "%.2f" $elapsed)
-    echo "\033[0;30m${timer_show}s"
+    echo "\u001b[38;5;250m${timer_show}s"
     unset timer
   fi
 }
