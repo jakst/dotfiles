@@ -97,6 +97,7 @@ alias avd="~/Library/Android/sdk/tools/emulator -avd"
 alias p="pnpm"
 alias b="bun"
 alias t="turbo"
+alias lu="linkup"
 alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL && proto outdated --update --latest --yes --config-mode=global && proto use --config-mode=global"
 alias sz="source ~/.zshrc"
 alias compose="docker-compose"
@@ -207,3 +208,10 @@ compdef _gt_yargs_completions gt
 ###-end-gt-completions-###
 
 alias gbdev="~/Downloads/grafbase-dev"
+
+# Linkup
+export LINKUP_CONFIG="/Users/jakst/code/endform/linkup.yaml"
+CERT_FILE=~/.linkup/certs/linkup_ca.cert.pem
+if [ -f $CERT_FILE ]; then
+  export NODE_EXTRA_CA_CERTS=$CERT_FILE
+fi
