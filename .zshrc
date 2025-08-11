@@ -102,6 +102,7 @@ alias up="brew upgrade && brew upgrade --cask && proto upgrade && pnpm up -igL &
 alias sz="source ~/.zshrc"
 alias compose="docker-compose"
 alias deluge="deluge-gtk"
+alias oc="opencode"
 
 # Environment variables
 export LANG=en_US.UTF-8
