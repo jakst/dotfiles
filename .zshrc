@@ -230,3 +230,91 @@ if [ -f '/Users/jakst/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 if [ -f '/Users/jakst/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jakst/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 . "$HOME/.local/bin/env"
+
+# Connect to an Android device over wireless debugging, pairing first if needed.
+# adb keys transports by the address used to connect, so a phone reached once by
+# raw IP and once by mDNS hostname shows up twice. Connect by hostname only;
+# that also survives the phone's IP changing.
+_pixel_connect_service() { # prints "<mDNS name>\t<host:port>" for wireless debugging
+  adb mdns services 2>/dev/null | awk '$2 == "_adb-tls-connect._tcp" { print $1 "\t" $NF; exit }'
+}
+
+_pixel_pairing_service() { # prints "<mDNS name>\t<host:port>" while the pairing dialog is open
+  adb mdns services 2>/dev/null | awk '$2 == "_adb-tls-pairing._tcp" { print $1 "\t" $NF; exit }'
+}
+
+_pixel_attached() { # $1 = serial; true when adb already holds that transport
+  adb devices 2>/dev/null | awk 'NR > 1 { print $1 }' | grep -qxF -- "$1"
+}
+
+pixel() {
+  local svc_name connect_addr pairing_name pairing_addr code waited out name_serial
+
+  adb mdns check >/dev/null 2>&1
+  IFS=$'\t' read -r svc_name connect_addr <<<"$(_pixel_connect_service)"
+  name_serial="$svc_name._adb-tls-connect._tcp"
+
+  # An IP-keyed transport alongside a name-keyed one is the same phone listed
+  # twice. Keep the name-keyed one; adb treats them as separate devices.
+  if [ -n "$connect_addr" ] && _pixel_attached "$connect_addr"; then
+    if [ -n "$svc_name" ] && _pixel_attached "$name_serial"; then
+      echo "pixel: collapsing duplicate transport $connect_addr"
+    else
+      echo "pixel: switching $connect_addr to the mDNS hostname form"
+    fi
+    adb disconnect "$connect_addr" >/dev/null 2>&1
+  fi
+
+  if [ -n "$svc_name" ]; then
+    if _pixel_attached "$name_serial"; then
+      echo "pixel: already connected as $name_serial"
+      return 0
+    fi
+    out=$(adb connect "$name_serial" 2>&1)
+    if printf '%s\n' "$out" | grep -qE '^(already )?connected to '; then
+      printf 'pixel: %s\n' "$out"
+      return 0
+    fi
+  fi
+
+  # Unreachable, so pair -- which needs the code dialog open on the phone.
+  IFS=$'\t' read -r pairing_name pairing_addr <<<"$(_pixel_pairing_service)"
+  if [ -z "$pairing_addr" ]; then
+    if [ -n "$connect_addr" ]; then
+      echo "pixel: found a device at $connect_addr but couldn't connect to it" >&2
+      echo "pixel: on the phone, open Wireless debugging > 'Pair device with pairing code'," >&2
+      echo "pixel: then run pixel again" >&2
+    else
+      echo "pixel: no wireless-debugging device found on the network" >&2
+      echo "pixel: on the phone, check Developer options > Wireless debugging is on" >&2
+      echo "pixel: and open 'Pair device with pairing code' the first time" >&2
+    fi
+    return 1
+  fi
+
+  printf 'pixel: pairing with %s\n' "$pairing_addr"
+  printf 'Enter the 6-digit code from the phone: '
+  read -r code
+  if [ -z "$code" ]; then
+    echo "pixel: no code entered" >&2
+    return 1
+  fi
+  adb pair "$pairing_addr" "$code" || return 1
+
+  # Pairing re-randomizes the port, so re-discover rather than reuse the old one.
+  echo "pixel: waiting for the connect service..."
+  waited=0
+  svc_name=''
+  while [ -z "$svc_name" ] && [ "$waited" -lt 15 ]; do
+    sleep 1
+    waited=$((waited + 1))
+    IFS=$'\t' read -r svc_name connect_addr <<<"$(_pixel_connect_service)"
+  done
+  if [ -z "$svc_name" ]; then
+    echo "pixel: paired, but its connect service never appeared" >&2
+    echo "pixel: try toggling Wireless debugging off and on" >&2
+    return 1
+  fi
+
+  adb connect "$svc_name._adb-tls-connect._tcp"
+}
