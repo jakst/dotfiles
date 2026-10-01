@@ -109,7 +109,7 @@ alias ai="opencode run --model=opencode/glm-5.2 \"How do I acthive the following
 # Environment variables
 export LANG=en_US.UTF-8
 export ANDROID_HOME=~/Library/Android/sdk
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Path variables
 export PATH=$PATH:~/.deno/bin
