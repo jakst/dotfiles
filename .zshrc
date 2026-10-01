@@ -103,6 +103,8 @@ alias sz="source ~/.zshrc"
 alias compose="docker-compose"
 alias deluge="deluge-gtk"
 alias oc="opencode"
+alias lg="lazygit"
+alias ai="opencode run --model=opencode/glm-5.2 \"How do I acthive the following in the terminal: <question>$*</question>. Do not answer the question. Generate a command that answers the question. Do not execute the command. Just reply with the command, so I can run it myself. Do not wrap the command in a code block when printing it. Also give me a short explanation of how the command works.\""
 
 # Environment variables
 export LANG=en_US.UTF-8
