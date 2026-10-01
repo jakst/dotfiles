@@ -216,3 +216,17 @@ CERT_FILE=~/.linkup/certs/linkup_ca.cert.pem
 if [ -f $CERT_FILE ]; then
   export NODE_EXTRA_CA_CERTS=$CERT_FILE
 fi
+
+# For Pulumi
+export AWS_PROFILE=endform
+
+# OpenCode
+export PATH=/Users/jakst/.opencode/bin:$PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jakst/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jakst/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jakst/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jakst/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+. "$HOME/.local/bin/env"
