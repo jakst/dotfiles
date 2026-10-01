@@ -50,7 +50,6 @@ cask_args appdir: "/Applications"
   cask "jordanbaird-ice" # Menu bar organizer
   cask "linear-linear"
   cask "microsoft-edge"
-  cask "messenger"
   cask "MonitorControl" # Control external monitor brightness
   # cask "nightowl"
   # cask "postico"
