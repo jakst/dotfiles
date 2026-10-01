@@ -210,8 +210,6 @@ _gt_yargs_completions()
 compdef _gt_yargs_completions gt
 ###-end-gt-completions-###
 
-alias gbdev="~/Downloads/grafbase-dev"
-
 # Linkup
 export LINKUP_CONFIG="/Users/jakst/code/endform/linkup.yaml"
 CERT_FILE=~/.linkup/certs/linkup_ca.cert.pem
